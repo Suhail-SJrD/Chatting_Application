@@ -1,0 +1,245 @@
+@font-face {
+    font-family: allText;
+    src: url(../fonts/Inter-SemiBold.ttf);
+}
+
+body {
+    background-image: url('https://source.unsplash.com/1632x825/?cat');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: allText;
+    /* filter: blur(1px); */
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    max-width: 955px;
+    height: 69vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 50px 260px;
+    box-shadow: 0px 0px 59px 0px;
+    overflow: auto;
+    /* background-color: red; */
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+
+.message {
+    background-color: gray;
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+#messageInp {
+    border-radius: 10px;
+    outline: none;
+    width: 88%;
+    border: 2px solid black;
+    border-radius: 6xp;
+    height: 34px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.send {
+    position: relative;
+    /* top: 29.9rem; */
+    bottom: -330px;
+    /* position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px; */
+}
+
+.btn {
+    width: 4rem;
+    height: 5vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    color: white;
+    background-color: green;
+    cursor: pointer;
+}
+
+
+/* media query */
+
+@media (max-width:415px) {
+    body {
+        background-image: url('https://source.unsplash.com/413x411/?cat');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 80vw;
+        position: relative;
+        left: -220px;
+        height: 100vh;
+    }
+
+    .send {
+        position: absolute;
+        bottom: 30px;
+        left: 65px;
+        display: inline;
+    }
+
+    #messageInp {
+        height: 10px;
+        width: 50vw;
+    }
+
+    .btn {
+        height: 30px;
+        /* margin: 10px; */
+        margin-left: 7px;
+        position: absolute;
+    }
+}
+
+
+@media (min-width:416px) and (max-width:893px) {
+    body {
+        background-image: url('https://source.unsplash.com/416x411/?cat');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 80vw;
+        position: relative;
+        left: -220px;
+        height: 80vh;
+        bottom: 30px;
+        
+    }
+
+    .send {
+        position: absolute;
+        bottom: 30px;
+        left: 70px;
+        display: inline;
+    }
+
+    #messageInp {
+        height: 10px;
+        width: 50vw;
+    }
+
+    .btn {
+        height: 30px;
+        /* margin: 10px; */
+        margin-left: 7px;
+        position: absolute;
+    }
+}
+
+
+@media (min-width:894px) and (max-width:1066px) {
+    body {
+        background-image: url('https://source.unsplash.com/894x825/?cat');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 80vw;
+        position: relative;
+        left: -180px;
+        height: 80vh;
+        bottom: 30px;
+    }
+
+    .send {
+        position: absolute;
+        bottom: 20px;
+        left: 180px;
+        display: inline;
+    }
+
+    #messageInp {
+        height: 15px;
+        width: 50vw;
+    }
+
+    .btn {
+        height: 30px;
+        /* margin: 10px; */
+        margin-left: 7px;
+        position: absolute;
+    }
+}
+
+@media (min-width:1066px) {
+    body {
+        background-image: url('https://source.unsplash.com/1066x825/?cat');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 80vw;
+        position: relative;
+        left: -4px;
+        height: 80vh;
+        bottom: 30px;
+    }
+
+    .send {
+        position: absolute;
+        bottom: 30px;
+        left: 305px;
+        /* display: inline; */
+    }
+
+    #messageInp {
+        height: 20px;
+        width: 50vw;
+    }
+
+    .btn {
+        height: 30px;
+        /* margin: 10px; */
+        margin-left: 7px;
+        position: absolute;
+    }
+}
